@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Källkvist</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Martian+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1fa94f2f1a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="apiSite"></div>
+    <div class="projectContainer">
+      <a href="index.html" class="hoverAble"
+        ><i class="fa-solid fa-arrow-left backArrow"></i
+      ></a>
+      <h2 class="hoverAble">Api Collection</h2>
+      <p class="apiIntro">
+        Relatively standard stuff going on here. Was just thinking that it is
+        good to show that I know the basics and some more concerning API calls
+        and similiar things of that nature.
+      </p>
+      <div class="apiCollection">
+        <div class="apiCard" id="weatherApi">
+          <img
+            src="https://t4.ftcdn.net/jpg/07/55/97/01/360_F_755970185_91qfWqP2mMyjfIvWC0lnJQNtyWIXdB7H.jpg"
+            alt="weather api background image"
+          />
+          <input
+            type="text"
+            name="searchCity"
+            id="searchCity"
+            placeholder="Search A city..."
+          />
+          <div class="weatherInfo hoverAble"></div>
+
+          <div class="hoverAble apiInfo">
+            <h3>Weather API</h3>
+            <h4>Axios - Open Weather Map</h4>
+          </div>
+        </div>
+        <div class="apiCard" id="quizApi">
+          <h2>Quiz Api</h2>
+          <button class="startQuiz hoverAble">Press to Start</button>
+          <div class="hoverAble apiInfo">
+            <h3>Quiz API</h3>
+            <h4>Axios - Open Trivia DB</h4>
+          </div>
+        </div>
+        <div class="apiCard" id="nasaApi">
+          <h2>Astronomy Picture of the Day</h2>
+          <button class="nasaBtn hoverAble">Generate please!</button>
+          <div class="hoverAble apiInfo">
+            <h3>Generate Image</h3>
+            <h4>Axios - NASA API</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cursor"></div>
+  </body>
+</html>
