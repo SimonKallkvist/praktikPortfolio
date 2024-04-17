@@ -48,6 +48,16 @@ mouseMover();
 
 //Custom cursor end
 
+// Highlight selection
+
+let colors = ['#c1b001', '#a8140e', '#4315aa', '#359d09', '#8f4762'];
+
+window.addEventListener('mousedown', (e) => {
+  let color = colors.shift();
+  document.documentElement.style.setProperty('--highlight-color', color);
+  colors.push(color);
+});
+
 //Active links line-through
 
 let navlinks = document.querySelectorAll('.navlink');

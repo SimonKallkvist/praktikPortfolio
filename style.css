@@ -10,6 +10,8 @@
   --_spaxingMedium: 16px;
   --_spaxingSmall: 8px;
   --_spaxingXSmall: 4;
+
+  --highlight-color: 54r;
 }
 
 * {
@@ -26,6 +28,10 @@
 
 html {
   cursor: none;
+}
+
+::selection {
+  background: var(--highlight-color);
 }
 .icon::before {
   display: inline-block;
@@ -248,6 +254,7 @@ img {
   position: relative;
   flex-direction: column;
   height: auto;
+  margin-bottom: 48px;
 }
 
 .projectCard .title {
@@ -292,6 +299,7 @@ img {
   font-size: 24px;
   font-weight: 800;
   cursor: pointer;
+  margin-left: 32px;
 }
 
 .projectLink a {
