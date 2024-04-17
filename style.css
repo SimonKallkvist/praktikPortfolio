@@ -314,6 +314,27 @@ img {
   text-decoration: line-through;
 }
 
+/* Stack styling */
+.stackInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* min-height: 150px; */
+  margin-block: 24px;
+  /* border: 1px solid black; */
+}
+
+.stackInfo > i:first-child:not(.stackRating i) {
+  font-size: 56px;
+}
+
+.stackRating {
+  display: flex;
+  gap: 4px;
+}
+/* Stack styling end*/
+
 /* API COLLECTION STYLING */
 .projectContainer {
   width: 100%;
